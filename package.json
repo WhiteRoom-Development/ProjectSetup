@@ -1,0 +1,11 @@
+{
+  "name" : "com.whiteroom.projectsetup",
+  "version" : "1.0.0",
+  "displayName" : "Project Setup",
+  "description" : "Creating folders for the project allows adding various assets and packages.",
+  "unity" : "6000.0.28f1",
+  "author" : {
+    "name" : "Ibrahim Albayrak",
+    "url" : "https://ibrahimalbayrak.blog/"
+  }
+}
