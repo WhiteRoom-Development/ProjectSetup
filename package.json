@@ -3,7 +3,7 @@
   "version" : "1.0.0",
   "displayName" : "Project Setup",
   "description" : "Creating folders for the project allows adding various assets and packages.",
-  "unity" : "2022.1",
+  "unity" : "6000.0",
   "author" : {
     "name" : "Ibrahim Albayrak",
     "url" : "https://ibrahimalbayrak.blog/"
