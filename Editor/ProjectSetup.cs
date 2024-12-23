@@ -30,16 +30,23 @@ namespace WhiteRoom.ProjectSetup
         public static void ImportEssentials()
         {
             Assets.ImportCustomAssets("Color Studio v4.1.1.unitypackage", @"C:\Unity Packages\Editor");
-            Assets.ImportCustomAssets("Editor Console Pro v3.975.unitypackage", @"C:\Unity Packages\Editor");
             Assets.ImportCustomAssets("vFavorites 2 v2.0.7.unitypackage", @"C:\Unity Packages\Editor");
             
             Assets.ImportAssets("Editor Auto Save.unitypackage", "IntenseNation/Editor ExtensionsUtilities");
             Assets.ImportAssets("Better Transform - Size Notes Global-Local workspace child parent transform.unitypackage", "Tiny Giant Studio/Editor ExtensionsUtilities");
             Assets.ImportAssets("Audio Preview Tool.unitypackage", "Warped Imagination/Editor ExtensionsAudio");
+            Assets.ImportAssets("Editor Console Pro.unitypackage", "FlyingWorm/Editor ExtensionsSystem");
+            Assets.ImportAssets("Graphy - Ultimate FPS Counter - Stats Monitor Debugger.unitypackage", "Tayx/ScriptingGUI");
             
             Refresh();
-            
+        }
+
+        [MenuItem("WhiteRoom/Setup/Reorganize Essential Asset folders", priority = 2)]
+        public static void ReorganizeEssentialAssets()
+        {
+            Folders.Move("Packs", "Graphy - Ultimate Stats Monitor");
             Folders.Move("Packs", "IntenseNation");
+            
             Folders.Move("Plugins", "WarpedImagination");
             Folders.Move("Plugins", "vFavorites");
             Folders.Move("Plugins", "ConsolePro");
@@ -55,8 +62,8 @@ namespace WhiteRoom.ProjectSetup
             Packages.Installation.InstallPackages(new[]
             {
                 "com.unity.editorcoroutines",
-                "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask"
-                // "git+https://github.com/Cysharp/UniTask.git"
+                "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+                "https://github.com/AnnulusGames/LitMotion.git?path=src/LitMotion/Assets/LitMotion"
             });
         }
 
@@ -86,6 +93,7 @@ namespace WhiteRoom.ProjectSetup
                 "ART/Visual Effects",
                 "Animation/Clips",
                 "Animation/Controllers",
+                "Animation/Controllers/Overrides",
                 "Scripts/Runtime",
                 "Scripts/Editor",
                 "Prefabs",
