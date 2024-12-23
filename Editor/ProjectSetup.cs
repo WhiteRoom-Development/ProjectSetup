@@ -46,6 +46,7 @@ namespace WhiteRoom.ProjectSetup
         {
             Folders.Move("Packs", "Graphy - Ultimate Stats Monitor");
             Folders.Move("Packs", "IntenseNation");
+            Folders.Move("Packs", "Color Studio");
             
             Folders.Move("Plugins", "WarpedImagination");
             Folders.Move("Plugins", "vFavorites");
