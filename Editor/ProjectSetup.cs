@@ -64,7 +64,8 @@ namespace WhiteRoom.ProjectSetup
             {
                 "com.unity.editorcoroutines",
                 "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
-                "https://github.com/AnnulusGames/LitMotion.git?path=src/LitMotion/Assets/LitMotion"
+                "https://github.com/AnnulusGames/LitMotion.git?path=src/LitMotion/Assets/LitMotion",
+                "https://github.com/WhiteRoom-Development/Utilities.git"
             });
         }
 
